@@ -1,0 +1,613 @@
+$cyan: #76c4ae;
+
+.app {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 1024px;
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .supportConfirmation {
+      display: flex;
+      justify-content: center;
+      background-color: #76c4ae;
+      margin: 75px;
+      text-align: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    // Design for login and register
+    .authentication {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: $cyan;
+      margin-right: -341.5px;
+      margin-left: -341.5px;
+      h1 {
+        font-size: 20px;
+        color: lightcyan;
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background-color: white;
+        width: 200px;
+        gap: 25px;
+
+        input {
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+        button {
+          padding: 10px;
+          border: none;
+          background-color: aqua;
+          color: white;
+          cursor: pointer;
+        }
+        span {
+          font-size: 12px;
+          text-align: center;
+        }
+        p {
+          font-size: 12px;
+          color: red;
+          text-align: center;
+        }
+        .label {
+          font-size: 12px;
+          text-align: center;
+          color: gray;
+        }
+      }
+    }
+    // Design for Navbar
+    .navbar {
+      .container {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+          img {
+            width: 120px;
+          }
+        }
+        .links {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          h6 {
+            font-size: 16px;
+            font-weight: 300;
+          }
+          span {
+            cursor: pointer;
+          }
+          .add {
+            background-color: $cyan;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 300;
+            &:hover {
+              width: 48px;
+              height: 48px;
+              color: aqua;
+              background-color: white;
+              border: 1px solid aqua;
+            }
+          }
+          .pur {
+            background-color: $cyan;
+            width: 80px;
+            height: 50px;
+            border-radius: 50%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 300;
+            font-size: 14px;
+            &:hover {
+              width: 78px;
+              height: 48px;
+              color: aqua;
+              background-color: white;
+              border: 1px solid aqua;
+            }
+          }
+        }
+      }
+    }
+    // Footer design
+    footer {
+      margin-top: 100px;
+      padding: 20px;
+      background-color: $cyan;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      img {
+        height: 50px;
+      }
+    }
+
+    // Design for home page
+    .home {
+      .scroll-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        border: 1px solid aqua;
+        z-index: 1000;
+    
+        &:hover {
+          border: 1px solid white;
+          background-color: $cyan;
+          color: white;
+
+        }
+      }
+      .cars {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+        .car {
+          display: flex;
+          gap: 50px;
+          &:nth-child(2n + 1) {
+            flex-direction: row-reverse;
+          }
+          .img {
+            flex: 2;
+            position: relative;
+            &::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              background-color: $cyan;
+              position: absolute;
+              top: 20px;
+              left: -20px;
+              z-index: -1;
+            }
+            img {
+              width: 100%;
+              max-height: 400px;
+              object-fit: cover;
+            }
+          }
+          .content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1 {
+              font-size: 50px;
+            }
+            p {
+              font-size: 20px;
+            }
+            button {
+              width: max-content;
+              padding: 12px 22px;
+              border: none;
+              cursor: pointer;
+              background-color: white;
+              border: 1px solid aqua;
+              color: aqua;
+              &:hover {
+                border: 1px solid white;
+                background-color: $cyan;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+    // Design for support page
+    .support {
+      display: flex;
+      padding-top: 100px;
+      .addressAndHours {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        h1 {
+          padding: 10px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+      .form {
+        display: flex;
+        flex: 2;
+        justify-content: center;
+        padding: 15px;
+        background-color: $cyan;
+        .name {
+          width: 233px;
+          padding: 20px;
+          margin-right: 10px;
+        }
+        .email {
+          width: 233px;
+          padding: 20px;
+        }
+        .subject {
+          width: 520px;
+          padding: 20px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .message {
+          width: 520px;
+          padding-left: 20px;
+          padding-right: 20px;
+          height: 100px;
+          margin-bottom: 10px;
+        }
+        button {
+          color: white;
+          background-color: black;
+          border: none;
+          padding: 20px;
+        }
+      }
+    }
+    // Design for info of one car
+    .oneCar {
+      display: flex;
+      gap: 50px;
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+      .recommendation {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      h1 {
+        font-size: 20px;
+        color: gray;
+      }
+      .car_post {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+        }
+      }
+      h2 {
+        color: gray;
+      }
+      button {
+        width: max-content;
+        padding: 7.5px 7.5px;
+        border: none;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid aqua;
+        color: aqua;
+        &:hover {
+          border: 1px solid white;
+          background-color: $cyan;
+          color: black;
+        }
+      }
+      .overview {
+        color: blue;
+      }
+      .success{
+        color: green;
+      }
+    }
+    // Design for add new car
+    .addCar {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input {
+          padding: 10px;
+          border: 1px solid lightgray;
+        }
+        .editContainer {
+          height: 300px;
+          overflow: scroll;
+          border: 1px solid lightgray;
+          .edit {
+            height: 100%;
+            border: none;
+          }
+        }
+      }
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .item {
+          padding: 10px;
+          border: 1px solid lightgray;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 12px;
+          color: gray;
+          h1 {
+            font-size: 12px;
+            color: gray;
+          }
+          .file {
+            text-decoration: underline;
+          }
+          .buttons {
+            justify-content: space-between;
+            display: flex;
+            :first-child {
+              cursor: pointer;
+              color: $cyan;
+              background-color: white;
+              border: 1px solid aqua;
+              padding: 5px 10px;
+            }
+            :last-child {
+              cursor: pointer;
+              color: white;
+              background-color: $cyan;
+              border: 1px solid aqua;
+              padding: 5px 10px;
+            }
+          }
+          .cat {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            color: $cyan;
+          }
+        }
+      }
+      
+    }
+
+    // Design for cart
+    .purchase {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+    
+      h1 {
+        font-size: 36px;
+        margin-bottom: 50px;
+      }
+      
+      .payment-btn {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+
+        .payment-title {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+
+        .payment-options {
+          display: flex;
+          gap: 20px;
+
+          button {
+            background-color: $cyan;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+              background-color: darken($cyan, 10%);
+            }
+          }
+        }
+      }
+      .cart-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    
+        img {
+          width: 250px;
+          height: 150px;
+          object-fit: cover;
+        }
+    
+        .cart-item-info {
+          flex: 2;
+    
+          h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+          }
+    
+          p {
+            font-size: 18px;
+            color: gray;
+          }
+        }
+    
+        button {
+          background-color: $cyan;
+          width: 80px;
+          height: 50px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          font-weight: 300;
+          font-size: 14px;
+          &:hover {
+            width: 78px;
+            height: 48px;
+            color: aqua;
+            background-color: white;
+            border: 1px solid aqua;
+          }
+        }
+      }
+    
+      button {
+        background-color: $cyan;
+        width: 100px;
+        height: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 14px;
+        &:hover {
+          width: 98px;
+          height: 48px;
+          color: aqua;
+          background-color: white;
+          border: 1px solid aqua;
+        }
+      }
+    
+      p {
+        font-size: 18px;
+        color: red;
+        margin-top: 20px;
+      }
+    
+      .empty-cart-message {
+        font-size: 24px;
+        margin-top: 50px;
+      }
+      .completePurchaseAndPayment{
+        display: flex;
+        justify-content: space-between;
+        .checkout-btn{
+          cursor: pointer;
+          color: black;
+          background-color: lightseagreen;
+          border: 1px solid aqua;
+          padding: 5px 10px;
+        }
+      }
+      
+    }
+    // Design for loan
+
+      .Loan{
+        .submit-btn{
+          margin-left: auto;
+          margin-right: auto; 
+          display: block;
+        }
+        .submit-btn.clicked {
+          display: none;
+        }
+      }
+      .lease{
+        .submit-btn{
+          margin-left: auto;
+          margin-right: auto; 
+          display: block;
+        }
+        .submit-btn.clicked {
+          display: none;
+        }
+      }
+      .credit{
+        .submit-btn{
+          margin-left: auto;
+          margin-right: auto; 
+          display: block;
+        }
+        .submit-btn.clicked {
+          display: none;
+        }
+      }
+      .saleDistribution {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: $cyan;
+        margin-right: -341.5px;
+        margin-left: -341.5px;
+        .addSale {
+          font-size: 20px;
+          color: lightcyan;
+          margin-bottom: 20px;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          padding: 30px;
+          background-color: white;
+          width: 200px;
+          gap: 25px;
+  
+          input {
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid gray;
+          }
+          button {
+            padding: 10px;
+            border: none;
+            background-color: aqua;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+      
+  }
+}
