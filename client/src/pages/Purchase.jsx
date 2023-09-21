@@ -14,7 +14,6 @@ function Purchase() {
   const [selectedPaymentOption, setSelectedPaymentOption] = useState('');
   const [createOrder, setCreateOrder] = useState(false);
   const [purchaseCompleted, setPurchaseCompleted] = useState(false);
-
   const navigate = useNavigate();
 
   const renderCartItems = () => {
@@ -41,10 +40,12 @@ function Purchase() {
       setCreateOrder(false);
       goToPayment();
     }
+  }, [createOrder, selectedPaymentOption]);
+  useEffect(() => {
     if (purchaseCompleted) {
       navigate('/orders');
     }
-  }, [createOrder, selectedPaymentOption, purchaseCompleted]);
+  }, [purchaseCompleted]);
 
   const goToPayment = async () => {
     if (cartItems.length === 0) {
@@ -79,6 +80,7 @@ function Purchase() {
       return;
     }
     setCreateOrder(true);
+    setPurchaseCompleted(true);
   };
   const cartTotal = cartItems.reduce((total, car) => total + parseFloat(car.price.replace(/[^0-9.]/g, '')), 0);
 

@@ -45,7 +45,6 @@ const Credit = ({ onPaymentCompleted, personID, orderID, cartTotal }) => {
 
   return (
     <div className='credit'>
-      <p>Credit/Debit:</p>
       <form onSubmit={handleSubmit}>
         <span>* Please enter your Card number: </span>
         <input

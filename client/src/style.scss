@@ -542,30 +542,120 @@ $cyan: #76c4ae;
     }
     // Design for loan
 
-      .Loan{
-        .submit-btn{
+      // .Loan{
+      //   .submit-btn{
+      //     margin-left: auto;
+      //     margin-right: auto; 
+      //     display: block;
+      //   }
+      //   .submit-btn.clicked {
+      //     display: none;
+      //   }
+      // }
+      // .lease{
+      //   .submit-btn{
+      //     margin-left: auto;
+      //     margin-right: auto; 
+      //     display: block;
+      //   }
+      //   .submit-btn.clicked {
+      //     display: none;
+      //   }
+      // }
+      // .credit{
+      //   .submit-btn{
+      //     margin-left: auto;
+      //     margin-right: auto; 
+      //     display: block;
+      //   }
+      //   .submit-btn.clicked {
+      //     display: none;
+      //   }
+      // }
+      .Loan {
+        background-color: $cyan;
+        padding: 20px;
+        border: 1px black solid;
+        width: 400px;
+        height: 280px;
+        p {
+          margin-left: 170px;
+          width: 45px;
+          background-color: white;
+          color: black;
+          padding: 5px;
+        }
+        span {
+          margin-left: 55px;
+        }
+        input {
+          margin-left: 55px;
+          width: 280px;
+        }
+        .submit-btn {
+          margin-top: 10px;
           margin-left: auto;
-          margin-right: auto; 
+          margin-right: auto;
           display: block;
         }
         .submit-btn.clicked {
           display: none;
         }
       }
-      .lease{
-        .submit-btn{
+      .lease {
+        background-color: $cyan;
+        padding: 20px;
+        border: 1px black solid;
+        width: 400px;
+        height: 280px;
+        p {
+          margin-left: 170px;
+          width: 50px;
+          background-color: white;
+          color: black;
+          padding: 5px;
+        }
+        input {
+          margin-left: 55px;
+          width: 280px;
+        }
+        span {
+          margin-left: 55px;
+        }
+        .submit-btn {
+          margin-top: 10px;
           margin-left: auto;
-          margin-right: auto; 
+          margin-right: auto;
           display: block;
         }
         .submit-btn.clicked {
           display: none;
         }
       }
-      .credit{
-        .submit-btn{
+      .credit {
+        background-color: $cyan;
+        padding: 20px;
+        border: 1px black solid;
+        width: 400px;
+        height: 190px;
+        p {
+          margin-left: 145px;
+          width: 105px;
+          background-color: white;
+          color: black;
+          padding: 5px;
+        }
+        span {
+          margin-left: 60px;
+        }
+        input {
+          margin-left: 60px;
+          width: 280px;
+        }
+        .submit-btn {
+          margin-top: 10px;
           margin-left: auto;
-          margin-right: auto; 
+          margin-right: auto;
           display: block;
         }
         .submit-btn.clicked {
